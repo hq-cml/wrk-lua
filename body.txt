@@ -1,0 +1,3 @@
+{"objId":1, "score":10, "bizIds":[1001,2001], "bizLevel":2, "uniqId":"xyz"}
+{"objId":2, "score":10, "bizIds":[1001,2001], "bizLevel":2, "uniqId":"xyz"}
+{"objId":3, "score":10, "bizIds":[1001,2001], "bizLevel":2, "uniqId":"xyz"}
