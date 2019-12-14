@@ -10,9 +10,12 @@ function init(args)
 end
  
 request = function()
-   parms = idArr[falg%(table.getn(idArr) + 1)]
+   --parms = idArr[falg%(table.getn(idArr) + 1)]
    --print(falg % table.getn(idArr))
-   print(falg % table.getn(idArr), parms)
-   falg = falg + 1
-   return wrk.format("POST", "http://127.0.0.1:9527/post", nil, parms) 
+   --print(falg % table.getn(idArr), parms)
+   --falg = falg + 1
+   score = math.random(1, 100)
+   objId = math.random(1, 10)
+   body = '{"objId":'..objId..', "score":'..score..', "bizIds":[1001,2001], "bizLevel":2, "uniqId":"xyz"}'
+   return wrk.format("POST", "http://127.0.0.1:9527/post", nil, body) 
 end
